@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Products | Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Our Products</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="product-grid">
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Chocolate Cake">
+    <h3>Chocolate Cake</h3>
+    <p>₹350</p>
+    <button onclick="addToCart('Chocolate Cake', 350)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1606312615640-3b06a7d9c6a0" alt="Cupcake">
+    <h3>Vanilla Cupcake</h3>
+    <p>₹80</p>
+    <button onclick="addToCart('Vanilla Cupcake', 80)">Add to Cart</button>
+  </div>
+</section>
+
+<script>
+function addToCart(name, price){
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push({name, price});
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(name + " added to cart!");
+}
+</script>
+</body>
+</html>
