@@ -1,8 +1,63 @@
-* {margin:0; padding:0; box-sizing:border-box;}
-body {font-family: Arial, sans-serif; background:#fffaf5; color:#333;}
-header {background:#d35400; color:#fff; padding:15px 50px; display:flex; justify-content:space-between; align-items:center;}
-nav a {color:#fff; margin-left:20px; text-decoration:none; font-weight:bold;}
-.hero {text-align:center; padding:100px 20px; background:url('https://www.istockphoto.com/photo/cake-display-gm526259891-53193554') center/cover; color:#fff;}
-.btn {background:#fff; color:#d35400; padding:10px 20px; border-radius:25px; font-weight:bold; text-decoration:none;}
-.btn:hover {background:#e67e22; color:#fff;}
-footer {background:#d35400; color:#fff; text-align:center; padding:15px;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0; /* softer cream background */
+  color: #333;
+}
+
+header {
+  background: #ff914d; /* lighter orange */
+  color: #fff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffe6cc; /* slight highlight */
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('https://www.istockphoto.com/photo/cake-display-gm526259891-53193554')
+    center/cover;
+  color: #fff;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.3); /* dark overlay for better text contrast */
+}
+
+.btn {
+  background: #fff;
+  color: #ff914d;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffb366; /* warm hover tone */
+  color: #fff;
+}
+
+footer {
+  background: #ff914d;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
