@@ -4,6 +4,70 @@
   <meta charset="UTF-8">
   <title>Sweet Delights Bakery</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('images/bakery-bg.jpg'); /* Path to your background image */
+      background-size: cover;       /* Makes the image cover the full screen */
+      background-repeat: no-repeat; /* Prevents image repetition */
+      background-position: center;  /* Centers the image */
+      background-attachment: fixed; /* Keeps the image fixed while scrolling */
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+      color: #333;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #333;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d35400;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: rgba(255, 255, 255, 0.6); /* Light overlay for text readability */
+      margin: 50px auto;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d35400;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #b34700;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,7 +82,7 @@
 
   <section class="hero">
     <h2>Freshly Baked Everyday!</h2>
-    <p>Delicious cakes, pastries, and breads baked with love ❤️</p>
+    <p>Delicious cakes, pastries, and breads baked with love </p>
     <a href="products.html" class="btn">Shop Now</a>
   </section>
 
